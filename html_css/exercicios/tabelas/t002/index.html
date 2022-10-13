@@ -10,14 +10,29 @@
             }
             
             table{
+                width: 500px;
                 border-collapse: collapse;
+               
 
             }
 
             th{
                 padding:10px;
+                background-color:rgb(123, 117, 117);
+                color:white;
+                
             }
-             td,th{
+
+            caption{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:1.5em;
+                font-weight: bold;
+                padding: 10px;
+                background-color:rgba(102, 101, 104, 0.874);
+                color:white;
+            }
+
+             td, th{
                 border: 1px solid black;
                 padding:5px;
              }
@@ -45,10 +60,11 @@
      
         <thead>
             <tr>
-                <th>posição</th>
-                <th>Unidade Federativa</th>
-                <th>População</th>
-                <th>Porcentagem</th>
+                <caption>População das Unidades Federativas </caption>
+                <th scope="col" style="width: 30px">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
+                <th scope="col">Porcentagem</th>
                 
             </tr>
         </thead>
@@ -238,7 +254,7 @@
 
         <tfoot class="destaque">
             <tr>
-                <td><strong>Total de Habitantes</strong> </td>
+                <th scope="row" colspan="1"  style="text-align:center;">Total de Habitantes</th>
                 <td></td>
                 <td><strong>213 317 639</strong></td>
                 <td class="numero"><strong>100%</strong></td>
